@@ -8,5 +8,5 @@ patches:
       kind: Deployment
       name: app
 images:
-  - name: docker.io/gothicfan/app
-    digest: sha256:53af5522b7c6e68e9fcbbc6a0ada4e8d18dbbd4cc9f7cbb1063319c8153aaf41
+  - name: docker.io/gothicfan/internal-service
+    digest: sha256:4e413b94bc60b5272c14128753d5f0a7a8f0d97c7f8dc73e8d8cbbc950e9254a
