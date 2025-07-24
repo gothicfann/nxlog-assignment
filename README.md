@@ -76,3 +76,6 @@ kubectl port-forward -n dev services/internal-service 8080:8080
 ## Image Update Strategy
 - Images are always tagged with `:latest` in CI.
 - Argo CD Image Updater uses the `digest` strategy to detect changes (via SHA256 digest) and updates the `kustomization.yaml` in GitOps overlays (dev/prod) with pinned digests for immutability.
+
+## Notes
+- Docker Hub rate limits might occur when pulling images.
