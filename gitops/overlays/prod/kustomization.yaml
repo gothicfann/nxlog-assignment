@@ -1,0 +1,12 @@
+resources:
+  - ../../base
+patches:
+  - path: patch-env.yaml
+    target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: app
+images:
+  - name: docker.io/gothicfan/app
+    digest: sha256:53af5522b7c6e68e9fcbbc6a0ada4e8d18dbbd4cc9f7cbb1063319c8153aaf41

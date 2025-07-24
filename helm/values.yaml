@@ -1,0 +1,14 @@
+hub: docker.io
+image: gothicfan/internal-service
+tag: latest
+env:
+  []
+  # - name: ENV1
+  #   value: VALUE1
+resources:
+  requests:
+    cpu: 5m
+    memory: 20Mi
+  limits:
+    cpu: 5m
+    memory: 20Mi
