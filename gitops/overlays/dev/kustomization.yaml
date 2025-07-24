@@ -6,7 +6,7 @@ patches:
       group: apps
       version: v1
       kind: Deployment
-      name: app
+      name: internal-service
 images:
   - name: docker.io/gothicfan/internal-service
     digest: sha256:4e413b94bc60b5272c14128753d5f0a7a8f0d97c7f8dc73e8d8cbbc950e9254a
