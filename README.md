@@ -44,7 +44,7 @@ Prerequisites: Install [Terraform](https://www.terraform.io/downloads.html) and 
 Argo CD Image Updater requires credentials to push updates to this repository. Create a Kubernetes secret with a GitHub Personal Access Token (PAT) provided via email (with read/write access to repo contents):
 
 ```bash
-kubectl create secret generic github-writeback-secret \
+kubectl create secret generic github \
   --namespace argocd \
   --from-literal=username=gothicfann \
   --from-literal=password=<ACCESS_TOKEN_PROVIDED_BY_MAIL>
