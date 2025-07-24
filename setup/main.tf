@@ -89,12 +89,6 @@ provider "kubectl" {
   config_path = kind_cluster.nxlog-assigntment.kubeconfig_path
 }
 
-# resource "time_sleep" "wait_30_seconds" {
-#   depends_on = [helm_release.argocd]
-
-#   create_duration = "30s"
-# }
-
 resource "kubectl_manifest" "dev" {
   yaml_body = <<YAML
 apiVersion: argoproj.io/v1alpha1
