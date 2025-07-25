@@ -32,6 +32,7 @@ Prerequisites: Install [Terraform](https://www.terraform.io/downloads.html) and 
 
 1. Apply Terraform configuration to create a Kind cluster (1 control plane + 3 worker nodes), install Argo CD and Argo CD Image Updater, and set up dev/prod applications:
    ```bash
+   terraform -chdir=setup init
    terraform -chdir=setup apply -auto-approve
    ```
 
